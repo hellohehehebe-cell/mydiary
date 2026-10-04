@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my diary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- PAGE 1: WELCOME -->
+  <div class="page welcome-page" id="welcomePage">
+
+    <div class="decor top-left">♡</div>
+    <div class="decor top-right">✦</div>
+    <div class="decor bottom-left">✧</div>
+    <div class="decor bottom-right">♡</div>
+
+    <h1>hi!</h1>
+
+    <p class="welcome-text">
+      here, you can write your innermost thoughts and
+      unspoken feelings and emotions. you’re free here.
+    </p>
+
+    <div class="username">@mydiary</div>
+
+    <button class="arrow-button" id="nextButton">→</button>
+
+  </div>
+
+
+  <!-- PAGE 2: ANONYMOUS THOUGHTS -->
+  <div class="page thoughts-page hidden" id="thoughtsPage">
+
+    <button class="create-button" id="createButton">
+      create a thought
+    </button>
+
+    <h2>anonymous thoughts</h2>
+
+    <p class="subtitle">
+      a little place for the things we don't say out loud ♡
+    </p>
+
+    <div id="thoughtList">
+
+      <div class="thought-card">
+        i wish i could say how i really feel.
+      </div>
+
+      <div class="thought-card">
+        today felt a little easier.
+      </div>
+
+      <div class="thought-card">
+        i miss someone i probably shouldn’t.
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- PAGE 3: CREATE A THOUGHT -->
+  <div class="page write-page hidden" id="writePage">
+
+    <div class="decor top-left">♡</div>
+    <div class="decor top-right">✦</div>
+
+    <h2>what’s on your mind?</h2>
+
+    <p class="subtitle">
+      this is your space. write whatever you need to say.
+    </p>
+
+    <textarea
+      id="thoughtInput"
+      maxlength="500"
+      placeholder="write your thought here..."
+    ></textarea>
+
+    <div class="character-count">
+      <span id="characterCount">0</span>/500
+    </div>
+
+    <button class="submit-button" id="submitButton">
+      submit
+    </button>
+
+    <button class="back-button" id="writeBackButton">
+      ← back
+    </button>
+
+  </div>
+
+
+  <!-- PAGE 4: THANK YOU -->
+  <div class="page thank-page hidden" id="thankPage">
+
+    <div class="decor top-left">♡</div>
+    <div class="decor top-right">✦</div>
+    <div class="decor bottom-left">✧</div>
+    <div class="decor bottom-right">♡</div>
+
+    <div class="big-heart">♡</div>
+
+    <h2>thank you for writing.</h2>
+
+    <p class="thank-text">
+      your thought has been heard.
+    </p>
+
+    <button class="back-button thank-back" id="thankBackButton">
+      ← back
+    </button>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
